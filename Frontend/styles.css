@@ -1,0 +1,145 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background:linear-gradient(#2b1055,#7587de);
+    min-height:1500px;
+    overflow-x: hidden;
+    position:relative;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    width:100vw;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+    top: 0;
+    left:0;
+    height: 10vh;
+    padding: 30px 100px;
+    
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header ul li a{
+    position :relative;
+    z-index: 3;
+    right: 160px;
+    padding:6px 15px;
+    border-radius: 20px;
+    color:white;
+    margin-right: 20px;
+}
+.active{
+    color:#2b1055;
+    background-color: white;
+    
+}
+header ul li a:hover{
+    color:#2b1055;
+    background-color: white;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration:none;
+    font-size:2em;
+    color: white;
+    position : relative;
+    right :20px;
+    z-index: 3;
+}
+
+section{
+    position : relative;
+    width : 100%;
+    height : 100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+section img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width : 100vw;
+    height: 100%;
+    object-fit:cover;
+}
+.sec::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width : 100vw;
+    height : 150px;
+    background:linear-gradient(transparent, #1c0522);
+    z-index: 1000;
+    transform:translateY(-150px);
+}
+#stars{
+    position:relative;
+    z-index: -1;
+}
+#moon{
+    mix-blend-mode: screen;
+    z-index: 2;
+}
+#mountains_front{
+    z-index: 2;
+}
+#moonlight{
+    position : absolute;
+    width : 100vw;
+    align-items:center;
+    top: 250px;
+    left: 600px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration:none;
+    font-size:5em;
+    color: white;
+    letter-spacing: 8px;
+    z-index: 1;
+}
+button{
+    text-decoration:none;
+    background-color: white;
+    padding:8px 30px;
+    color:#2b1055;
+    border-radius:40px;
+    font-size:1.5em;
+    position:absolute;
+    top :470px;
+    z-index: 1;
+    left: 610px;
+}
+.sec{
+    position :relative;
+    padding: 100px;
+    background: #1c0522;
+}
+.sec h2{
+    font-size:3.5em;
+    margin-top: 10px;
+    color:#fff;
+}
+.sec p{
+    font-size:1.2em;
+    color:#fff;
+    padding-top:30px;
+}
