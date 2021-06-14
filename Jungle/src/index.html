@@ -1,0 +1,66 @@
+<!Doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rancho&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div><a href="#">Jungle</a></div>
+            <ul>
+                <li ><a href=# class="active">Home</a></li>
+                <li><a href=#>About</a></li>
+                <li><a href=#>Destination</a></li>
+                <li><a href=#>Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <text id="txt">Its time for a new <div>Adventure!</div></text>
+            <img src="../img/bird1.png" id="bird1">
+            <img src="../img/bird2.png" id="bird2">
+            <img src="../img/forest.png" id="forest">
+            <img src="../img/rocks.png" id="rocks">
+            <img src="../img/water.png" id="water">
+            <a id="btn">Explore</a>
+        </section>
+        <div id="sec">
+            <h2>Parallax Scrolling Effects</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ipsum, voluptatum deleniti tempore magni nostrum accusantium eligendi odit, minima minus nisi eaque consequatur mollitia, placeat itaque officia animi quo rerum?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum atque animi, libero accusantium esse cumque tempora neque? Dolore voluptas voluptatum cumque veniam, ipsam sapiente debitis id placeat? Vero, quod sunt?<br><br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ipsum, voluptatum deleniti tempore magni nostrum accusantium eligendi odit, minima minus nisi eaque consequatur mollitia, placeat itaque officia animi quo rerum?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum atque animi, libero accusantium esse cumque tempora neque? Dolore voluptas voluptatum cumque veniam, ipsam sapiente debitis id placeat? Vero, quod sunt?<br><br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ipsum, voluptatum deleniti tempore magni nostrum accusantium eligendi odit, minima minus nisi eaque consequatur mollitia, placeat itaque officia animi quo rerum?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum atque animi, libero accusantium esse cumque tempora neque? Dolore voluptas voluptatum cumque veniam, ipsam sapiente debitis id placeat? Vero, quod sunt?<br><br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ipsum, voluptatum deleniti tempore magni nostrum accusantium eligendi odit, minima minus nisi eaque consequatur mollitia, placeat itaque officia animi quo rerum?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum atque animi, libero accusantium esse cumque tempora neque? Dolore voluptas voluptatum cumque veniam, ipsam sapiente debitis id placeat? Vero, quod sunt?<br><br>
+        </p>
+        <script>
+            bird1=document.getElementById("bird1");
+            bird2=document.getElementById("bird2");
+            forest=document.getElementById("forest");
+            water=document.getElementById("water");
+            rocks=document.getElementById("rocks");
+            btn=document.getElementById("btn");
+            txt=document.getElementById("txt");
+            sec=document.getElementById("sec");
+            header=document.getElementsByTagName("header");
+            window.addEventListener("scroll",function(){
+                value=window.scrollY;
+                bird1.style.left=value*0.8+'px';
+                bird1.style.top=-value*0.8+'px';
+                bird2.style.left=-value*0.8+'px';
+                bird2.style.top=-value*0.8+'px';
+                water.style.top=-value*0.3+'px';
+                rocks.style.top=-value*0.5+'px';
+                forest.style.top=-value*0.5+'px';
+                txt.style.top=(230-value*4)+'px';
+                btn.style.top=400-value*0.5+'px';
+                sec.style.top=value*-0.3+'px';
+            })
+
+
+        </script>
+    </body>
+</html>
