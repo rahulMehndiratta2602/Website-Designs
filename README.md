@@ -1,2 +1,2 @@
 # Website-Designs
-A repository of Figma Designs
+A repository of Frontend Designs with codes
